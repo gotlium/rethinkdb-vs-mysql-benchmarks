@@ -10,7 +10,7 @@ source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_
 wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | apt-key add -
 apt-get update && apt-get install -y rethinkdb
 
-apt-get install -y php5-cli php5-mysql
+apt-get install -y php5-cli php5-mysql php5-mysqlnd
 
 cp configs/sysctl.conf /etc/sysctl.conf
 sysctl -p
