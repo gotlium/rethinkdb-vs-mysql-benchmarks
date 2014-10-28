@@ -77,6 +77,21 @@ Linux results (MySQL is faster x10+):
     Running RethinkDB group...
     Duration: 34.437789916992 s, CPU: 700-800%
 
+
+Linux SQL_NO_CACHE results (MySQL is faster x2+):
+
+    Select(x12):
+    Running MySQL select...
+    Duration: 4.7808909416199 s
+
+    SelectGroup (x2):
+    Running MySQL select group...
+    Duration: 4.6870198249817 s
+
+    Group (x2):
+    Running MySQL group...
+    Duration: 18.299555063248 s
+
 ------------------------------------------------
 Ubuntu 14.04.1
 Intel® Core™ i7-4770 Quad-Core Haswell
@@ -102,5 +117,5 @@ Original sources author: danielmewes. Original sources url: http://dmewes.com/~d
 
 On our company we run benchmarks on Golang, and result is very different.
 Because Golang is low-level language.
-Result: MySQL x100 faster RethinkDB and MongoDB 10x faster RethinkDB (on aggregation between date on 2 million records).
+Result: MySQL x50 faster RethinkDB and MongoDB 10x faster RethinkDB (on aggregation between date on 2 million records).
 
