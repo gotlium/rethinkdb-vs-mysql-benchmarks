@@ -1,4 +1,5 @@
-Simple benchmarks MySQL vs RethinkDB. Based on discussion https://github.com/rethinkdb/rethinkdb/issues/3245
+Simple benchmarks MySQL vs RethinkDB. Rules: Insert/Select/Group/Sum
+Based on discussion https://github.com/rethinkdb/rethinkdb/issues/3245
 At first run ./installation.sh on Ubuntu/Linux
 And after run benchmarks ./run-benchmarks.sh
 
@@ -98,3 +99,8 @@ ln -sf /bin/bash /bin/sh
 
 
 Original sources author: danielmewes. Original sources url: http://dmewes.com/~daniel/rdb-mysql-bench.zip
+
+On our company we run benchmarks on Golang, and result is very different.
+Because Golang is low-level language.
+Result: MySQL x100 faster RethinkDB and MongoDB 10x faster RethinkDB (on aggregation between date on 2 million records).
+
