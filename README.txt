@@ -77,6 +77,7 @@ Linux results (MySQL is faster x10+):
     Duration: 34.437789916992 s, CPU: 700-800%
 
 ------------------------------------------------
+Ubuntu 14.04.1
 Intel® Core™ i7-4770 Quad-Core Haswell
 32 GB DDR3 RAM
 2 x 2 TB SATA 6 Gb/s Enterprise HDD; 7200 rpm (Software-RAID 1)
